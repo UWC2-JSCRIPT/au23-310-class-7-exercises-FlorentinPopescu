@@ -1,8 +1,9 @@
-/**
- * Returns an array of 52 Cards
- * @returns {Array} deck - a deck of cards
- */
 const getDeck = function() {
+  /**
+   * Returns an array of 52 Cards
+   * @returns {Array} deck - a deck of cards
+  */
+
   // Write function HERE
   let cards = [];
   let suits = ['hearts', 'spades', 'clubs', 'diamonds'];
@@ -18,8 +19,7 @@ const getDeck = function() {
   return cards;
 }
 
-
-
+/* ------------------------------------------- */
 // CHECKS
 const deck = getDeck();
 console.log(`Deck length equals 52? ${deck.length === 52}`);
@@ -36,3 +36,6 @@ const cardHasDisplayVal = randomCard &&
     randomCard.displayVal && 
     typeof randomCard.displayVal === 'string';
 console.log(`Random card has display value? ${cardHasDisplayVal}`);
+
+/* ------------------------------------------- */
+module.exports = { deck, getDeck };
